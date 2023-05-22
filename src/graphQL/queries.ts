@@ -4,6 +4,7 @@ export const GET_ALL_CONTINENTS = gql`
 query Continents {
     continents {
         name
+        code
     }
 } 
 `
