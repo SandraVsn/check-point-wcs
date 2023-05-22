@@ -18,3 +18,14 @@ query countries($filter: CountryFilterInput) {
   }
 }
 `
+
+export const GET_COUNTRY_BY_CODE= gql`
+query country($code: ID!){
+    country(code: $code){
+        name
+        currency
+        emoji
+        capital
+    }
+}
+`
