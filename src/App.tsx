@@ -1,9 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContinentsPage from "./pages/ContinentsPage";
 
 function App() {
   return (
-   <ContinentsPage />
-  );
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={(<ContinentsPage/>)} />
+</Routes>
+</BrowserRouter>  );
 }
 
 export default App;
