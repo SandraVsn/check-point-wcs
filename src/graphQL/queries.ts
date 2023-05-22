@@ -8,3 +8,13 @@ query Continents {
     }
 } 
 `
+
+export const GET_COUNTRIES_BY_CONTINENT_CODE = gql`
+query countries($filter: CountryFilterInput) {
+  countries(filter: $filter){
+    name
+    code
+    emoji
+  }
+}
+`
