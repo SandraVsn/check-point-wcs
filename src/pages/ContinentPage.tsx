@@ -32,7 +32,7 @@ export default function ContinentPage() {
           type='text'
           value={filter}
           onChange={handleFilterChange}
-          placeholder='Filter countries...'
+          placeholder='Filter countries'
           className='border border-gray-300 px-4 py-2 rounded lg:col-span-3 sm:col-span-2'
         />
         {countriesList! &&
